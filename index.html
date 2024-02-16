@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind and dasi ui cdn links  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- External css file link  -->
+    <link rel="stylesheet" href="./Styles/style.css">
+    <title>Travel here</title>
+</head>
+<body>
+    <!-- Header part of this webpage  -->
+    <header>
+        <div class="bg-slate-700">
+            <nav class="container mx-auto flex justify-between text-white items-center px-5 py-5">
+                <div class="logo font-bold text-blue-500 text-xl lg:text-3xl">Travel Here</div>
+                <div>
+                    <ul class="flex gap-5">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#"><span class="text-xl text-emerald-500" ><sup id="productList" class="text-xl"></sup ></span> Product List</a></li>
+                    </ul>
+                </div>
+            </nav> 
+        </div>
+        <!-- Header banner part -->
+        <div class="container mx-auto flex justify-around ">
+            <div>
+                <h1 class="text-5xl m-5">Lets Travel</h1>
+                <p class="m-5 max-w-[400px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis modi eaque quae debitis reprehenderit nam expedita magnam neque quidem tempore, cum error consequuntur autem voluptate repellendus sequi laboriosam vel reiciendis?</p>
+                <h3 class="m-5">Total Budget : <span id="myBudget">900</span>$</h3>
+            </div>
+            <div class="">
+                <img src="./images/travel.avif" alt="">
+            </div>
+        </div>
+    </header>
+    <!-- Main part of this webpage -->
+    <main class="container mx-auto mt-5 flex">
+        <!-- Cards container  -->
+        <div class="grid justify-center items-center lg:grid lg:grid-cols-3 gap-5">
+            <!-- first card  -->
+            <div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                    <img src="./images/bondorbon.webp" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Bondor bon</h2>
+                        <p>Cost : <span id="bondorbonCost">300</span>$</p>
+                        <div class="card-actions">
+                            <button class="btn card-btn btn-primary">Add to card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Second card  -->
+            <div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                    <img src="./images/conxbazar.webp" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Cox's bazar</h2>
+                        <p>Cost : <span id="bondorbonCost">500</span>$</p>
+                        <div class="card-actions">
+                            <button class="btn card-btn btn-primary">Add to card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- third card  -->
+            <div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                    <img src="./images/dhaka.webp" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Dhaka</h2>
+                        <p>Cost : <span id="bondorbonCost">300</span>$</p>
+                        <div class="card-actions">
+                            <button class="btn card-btn btn-primary">Add to card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fourth card  -->
+            <div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                    <img src="./images/khulna.jpg" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Khulna</h2>
+                        <p>Cost : <span id="bondorbonCost">400</span>$</p>
+                        <div class="card-actions">
+                            <button class="btn card-btn btn-primary">Add to card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fiveth card  -->
+            <div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                    <img src="./images/slyte.webp" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Slyte</h2>
+                        <p>Cost : <span id="bondorbonCost">300</span>$</p>
+                        <div class="card-actions">
+                            <button class="btn card-btn btn-primary">Add to card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- sixth card  -->
+            <div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                    <img src="./images/sundorbon.webp" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Bondor bon</h2>
+                        <p>Cost : <span id="bondorbonCost">500</span>$</p>
+                        <div class="card-actions">
+                            <button class="btn card-btn btn-primary">Add to card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Show price area  -->
+        <div class="mt-10 boreder-2 ">
+            <h1 class="text-2xl text-center m-5">Card</h1>
+            <hr>
+            <h3 class="text-xl text-center m-5">Total cost <span id="totalCost">0</span>$</h3>
+            <div class="flex">
+                <button class="btn bg-slate-700 text-white">Bus+<span id="busCost">100</span>$</button>
+                <button class="btn bg-slate-700 text-white">Train+<span id="TrainCost"> -200</span>$</button>
+                <button class="btn bg-slate-700 text-white">Flight+<span id="fliteCost">500</span>$</button>
+            </div>
+        </div>
+    </main>
+    <!-- Footer part of this webpage -->
+    <footer></footer>
+    <!-- External JavaScript file link here  -->
+    <script src="./Scripts/travel.js"></script>
+</body>
+</html>
