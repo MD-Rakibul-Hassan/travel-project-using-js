@@ -39,7 +39,7 @@
         </div>
     </header>
     <!-- Main part of this webpage -->
-    <main class="container mx-auto mt-5 flex">
+    <main class="container mx-auto mt-5 flex flex-col-reverse lg:flex lg:flex-row ">
         <!-- Cards container  -->
         <div class="grid justify-center items-center lg:grid lg:grid-cols-3">
             <!-- first card  -->
@@ -49,7 +49,7 @@
                     <img src="./images/bondorbon.webp" alt="Shoes" class="rounded-xl h-48" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Bondor bon</h2>
+                        <h2 class="card-title">Bandor bon</h2>
                         <p class="price">Cost : <span id="bondorbonCost">300</span>$</p>
                         <div class="card-actions">
                             <button class="btn card-btn btn-primary">Add to card</button>
@@ -124,7 +124,7 @@
                     <img src="./images/sundorbon.webp" alt="Shoes" class="rounded-xl  h-48" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Bondor bon</h2>
+                        <h2 class="card-title">Sundor bon</h2>
                         <p>Cost : <span id="bondorbonCost">500</span>$</p>
                         <div class="card-actions">
                             <button class="btn card-btn btn-primary">Add to card</button>
@@ -138,7 +138,7 @@
             <h1 class="text-2xl text-center m-5">Card</h1>
             <hr>
             <h3 class="text-xl text-center m-5">Total cost <span id="totalCost">0</span>$</h3>
-            <div class="flex">
+            <div class="flex justify-center lg:block">
                 <button class="btn bg-slate-700 text-white">Bus+<span id="busCost">100</span>$</button>
                 <button class="btn bg-slate-700 text-white">Train+<span id="TrainCost"> -200</span>$</button>
                 <button class="btn bg-slate-700 text-white">Flight+<span id="fliteCost">500</span>$</button>

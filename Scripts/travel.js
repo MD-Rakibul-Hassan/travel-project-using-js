@@ -34,8 +34,19 @@ for (const addBtn of allAddToCardBtn) {
 }
 // function for add total cost 
 function addTotalCost (id,prevusCost,currentCost) {
+    const myBudget = document.getElementById("myBudget");
+    const myBudgetNumber = parseInt(myBudget.innerText);
     const totalCostNumber = parseInt(prevusCost);
     const priceNumber = parseInt(currentCost);
     const sumTotalCost = totalCostNumber + priceNumber;
-    getText(id,sumTotalCost)
+    getText(id,sumTotalCost);
+    if (myBudgetNumber > 0) {  
+        let costBudget = myBudgetNumber - priceNumber;
+        if (costBudget < 0) {
+            alert("Your budget is too low!😓")
+        }else {
+            myBudget.innerText = costBudget;
+        }
+    }
+
 }
