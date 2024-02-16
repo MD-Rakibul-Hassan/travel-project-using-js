@@ -21,7 +21,7 @@
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">About</a></li>
-                        <li><a href="#"><span class="text-xl text-emerald-500" ><sup id="productList" class="text-xl"></sup ></span> Product List</a></li>
+                        <li><a href="#"><span class="text-xl text-emerald-500" ><sup id="productList" class="text-xl"></sup ></span>Product list</a></li>
                     </ul>
                 </div>
             </nav> 
@@ -31,7 +31,7 @@
             <div>
                 <h1 class="text-5xl m-5">Lets Travel</h1>
                 <p class="m-5 max-w-[400px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis modi eaque quae debitis reprehenderit nam expedita magnam neque quidem tempore, cum error consequuntur autem voluptate repellendus sequi laboriosam vel reiciendis?</p>
-                <h3 class="m-5">Total Budget : <span id="myBudget">900</span>$</h3>
+                <h3 class="m-5 text-2xl font-bold">Total Budget : <span id="myBudget">900</span>$</h3>
             </div>
             <div class="">
                 <img src="./images/travel.avif" alt="">
@@ -41,16 +41,16 @@
     <!-- Main part of this webpage -->
     <main class="container mx-auto mt-5 flex">
         <!-- Cards container  -->
-        <div class="grid justify-center items-center lg:grid lg:grid-cols-3 gap-5">
+        <div class="grid justify-center items-center lg:grid lg:grid-cols-3">
             <!-- first card  -->
             <div>
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card  bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
-                    <img src="./images/bondorbon.webp" alt="Shoes" class="rounded-xl" />
+                    <img src="./images/bondorbon.webp" alt="Shoes" class="rounded-xl h-48" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Bondor bon</h2>
-                        <p>Cost : <span id="bondorbonCost">300</span>$</p>
+                        <p class="price">Cost : <span id="bondorbonCost">300</span>$</p>
                         <div class="card-actions">
                             <button class="btn card-btn btn-primary">Add to card</button>
                         </div>
@@ -59,9 +59,9 @@
             </div>
             <!-- Second card  -->
             <div>
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card  bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
-                    <img src="./images/conxbazar.webp" alt="Shoes" class="rounded-xl" />
+                    <img src="./images/conxbazar.webp" alt="Shoes" class="rounded-xl h-48" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Cox's bazar</h2>
@@ -74,9 +74,9 @@
             </div>
             <!-- third card  -->
             <div>
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
-                    <img src="./images/dhaka.webp" alt="Shoes" class="rounded-xl" />
+                    <img src="./images/dhaka.webp" alt="Shoes" class="rounded-xl h-48" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Dhaka</h2>
@@ -89,9 +89,9 @@
             </div>
             <!-- fourth card  -->
             <div>
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card  bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
-                    <img src="./images/khulna.jpg" alt="Shoes" class="rounded-xl" />
+                    <img src="./images/khulna.jpg" alt="Shoes" class="rounded-xl  h-48" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Khulna</h2>
@@ -104,9 +104,9 @@
             </div>
             <!-- fiveth card  -->
             <div>
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card  bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
-                    <img src="./images/slyte.webp" alt="Shoes" class="rounded-xl" />
+                    <img src="./images/slyte.webp" alt="Shoes" class="rounded-xl  h-48" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Slyte</h2>
@@ -119,9 +119,9 @@
             </div>
             <!-- sixth card  -->
             <div>
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card  bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
-                    <img src="./images/sundorbon.webp" alt="Shoes" class="rounded-xl" />
+                    <img src="./images/sundorbon.webp" alt="Shoes" class="rounded-xl  h-48" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Bondor bon</h2>
@@ -142,6 +142,12 @@
                 <button class="btn bg-slate-700 text-white">Bus+<span id="busCost">100</span>$</button>
                 <button class="btn bg-slate-700 text-white">Train+<span id="TrainCost"> -200</span>$</button>
                 <button class="btn bg-slate-700 text-white">Flight+<span id="fliteCost">500</span>$</button>
+            </div>
+            <!-- Dynamicaly add order list when add a card  -->
+            <div class="m-5">
+                <ol id="placeList" class="list-decimal">
+
+                </ol>
             </div>
         </div>
     </main>
